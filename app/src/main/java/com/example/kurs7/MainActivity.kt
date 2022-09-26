@@ -163,6 +163,7 @@ class MainActivity : AppCompatActivity() {
         tessBaseApi.setImage(bmp)
         val extractedText = tessBaseApi.utF8Text
         tessBaseApi.recycle()
+        findViewById<ImageView>(R.id.imageView).setImageBitmap(bmp)
 
         return extractedText
     }
